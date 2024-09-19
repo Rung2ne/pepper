@@ -1,1 +1,1 @@
-worker: python pepper bot.py
+worker: python pepper.py
