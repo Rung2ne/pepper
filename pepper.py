@@ -1,4 +1,6 @@
 import discord
+import os
+
 from discord.ext import commands
 from discord import app_commands
 
@@ -21,4 +23,5 @@ async def setup(bot):
     await bot.tree.sync()  # 슬래시 명령어를 동기화
 
 # 봇 실행
-bot.run("YMTI4NjI4MjMyNzk4MjM0NjMyNA.Gqd7Lo.ObTOnVsKqpfkGPdiGowg-XyjKorM6hyWCjaQlc")
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
